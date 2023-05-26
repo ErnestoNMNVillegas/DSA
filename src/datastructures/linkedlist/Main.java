@@ -3,7 +3,8 @@ package datastructures.linkedlist;
 public class Main {
     public static void main(String[] args) {
 
-        DoublyLinkedList myDLL = new DoublyLinkedList(7);
+        DoublyLinkedList myDLL = new DoublyLinkedList(1);
+        myDLL.append(2);
 
         myDLL.getHead();
         myDLL.getTail();
@@ -13,48 +14,16 @@ public class Main {
         myDLL.printList();
 
         /*
-            EXPECTED OUTPUT:
-            ----------------
-            Head: 7
-            Tail: 7
-            Length: 1
+       		EXPECTED OUTPUT:
+        	----------------
+        	Head: 1
+        	Tail: 2
+        	Length: 2
 
-            Doubly Linked List:
-            7
+        	Doubly Linked List:
+        	1
+        	2
 
-        */
-
-//        LinkedList myLinkedList = new LinkedList(1);
-//        myLinkedList.append(2);
-//        myLinkedList.append(3);
-//        myLinkedList.append(4);
-//
-//        System.out.println("LL before reverse():");
-//        myLinkedList.printList();
-//
-//        myLinkedList.reverse();
-//
-//        System.out.println("\nLL after reverse():");
-//        myLinkedList.printList();
-
-
-        /*
-            EXPECTED OUTPUT:
-            ----------------
-            LL before reverse():
-            1
-            2
-            3
-            4
-
-            LL after reverse():
-            4
-            3
-            2
-            1
-
-        */
-
-
+     	*/
     }
 }
